@@ -17,6 +17,7 @@ public class Main {
 
         WebElement input = driver.findElement(By.id("search")); // найти элемент по id: нашли инпут
         input.sendKeys("интерьер"); // вписываем запрос
+      //  input.sendKeys("интерьер", Keys.ENTER); // при необходимости пользуемся  Keys
         WebElement searchButton = driver.findElement(By.xpath("//*[@id=\"search-form\"]/input[2]")); // найти элемент по xpath: нашли кнопку
         searchButton.click(); // кликнули на кнопку
 
